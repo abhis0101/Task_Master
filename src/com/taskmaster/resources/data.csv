@@ -1,0 +1,11 @@
+id,type,name,status,description,duration,startTime,epic
+1,TASK,Buy Flowers,NEW,Roses,10,01.03.2023 12:00
+2,TASK,Order pizza,NEW,Margarita,15,02.03.2023 12:00
+3,EPIC,Build a house,NEW,One-story house with a flat roof,20,02.03.2023 15:00
+4,EPIC,Feed the dog,NEW,Morning at 8:00,10,25.03.2023 10:00
+5,EPIC,Feed the cat,NEW,Morning at 10:00,10,21.03.2023 10:00
+6,SUBTASK,Establish Foundation,NEW,Strip Foundation,10,28.03.2023 12:00,3
+7,SUBTASK,Build Walls,NEW,Wall material - red brick,10,02.03.2023 15:00,3
+8,SUBTASK,Dig a landing hole,NEW,Depth of the pit - 1m,10,25.03.2023 10:00,4
+
+5,1,2,3,4,6,7,8
