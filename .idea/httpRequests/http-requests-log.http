@@ -1,0 +1,178 @@
+GET http://localhost:8080/tasks/task
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-23T031546.200.txt
+
+###
+
+POST http://localhost:8080/tasks/task
+Content-Type: application/json
+Content-Length: 189
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 1,
+  "type": "TYPE1",
+  "title": "Example Task",
+  "status": "IN_PROGRESS",
+  "description": "This is an example task.",
+  "duration": 3600,
+  "startTime": "2023-07-22T10:00:00"
+}
+
+<> 2023-07-23T031546.201.txt
+
+###
+
+GET http://localhost:8080/tasks
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-23T023930.200.txt
+
+###
+
+POST http://localhost:8080/tasks/task
+Content-Type: application/json
+Content-Length: 189
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 1,
+  "type": "TYPE1",
+  "title": "Example Task",
+  "status": "IN_PROGRESS",
+  "description": "This is an example task.",
+  "duration": 3600,
+  "startTime": "2023-07-22T10:00:00"
+}
+
+<> 2023-07-23T023930.201.txt
+
+###
+
+GET http://localhost:8080/tasks
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-23T022910.200.txt
+
+###
+
+POST http://localhost:8080/tasks/task
+Content-Type: application/json
+Content-Length: 189
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 1,
+  "type": "TYPE1",
+  "title": "Example Task",
+  "status": "IN_PROGRESS",
+  "description": "This is an example task.",
+  "duration": 3600,
+  "startTime": "2023-07-22T10:00:00"
+}
+
+<> 2023-07-23T022910.201.txt
+
+###
+
+GET http://localhost:8080/tasks
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-23T022518-1.200.txt
+
+###
+
+POST http://localhost:8080/tasks
+Content-Type: application/json
+Content-Length: 189
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 1,
+  "type": "TYPE1",
+  "title": "Example Task",
+  "status": "IN_PROGRESS",
+  "description": "This is an example task.",
+  "duration": 3600,
+  "startTime": "2023-07-22T10:00:00"
+}
+
+<> 2023-07-23T022518.200.txt
+
+###
+
+GET http://localhost:8080/tasks
+Accept: application/json
+<> 2023-07-23T022229.200.txt:
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-23T022505.400.html
+
+###
+
+GET http://localhost:8080/tasks
+Accept: application/json
+<> 2023-07-23T022229.200.txt:
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-23T022502.400.html
+
+###
+
+GET http://localhost:8080/tasks
+Accept: application/json
+<> 2023-07-23T022229.200.txt:
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-23T022442.400.html
+
+###
+
+POST http://localhost:8080/tasks
+Content-Type: application/json
+Content-Length: 189
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 1,
+  "type": "TYPE1",
+  "title": "Example Task",
+  "status": "IN_PROGRESS",
+  "description": "This is an example task.",
+  "duration": 3600,
+  "startTime": "2023-07-22T10:00:00"
+}
+
+<> 2023-07-23T022229.200.txt
+
+###
+

@@ -5,27 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10f4685c-87b0-4206-81c2-ac3849dc69ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/entities/Epic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/entities/Subtask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/entities/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/entities/TaskTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/exceptions/ManagerSaveException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/managers/FileBackedTasksManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/managers/HistoryManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/managers/InMemoryHistoryManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/managers/InMemoryTaskManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/managers/Managers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/managers/TaskManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/resources/data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/managers/HttpTaskManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/server/HttpTaskServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/server/KVServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/server/KVTaskClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/server/adapter/FileAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/server/adapter/HistoryManagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/taskmaster/server/adapter/LocalDateTimeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Epic.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Subtask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/taskmaster/entities/TaskStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/taskmaster/entities/Epic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/taskmaster/entities/Epic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/taskmaster/entities/Subtask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/taskmaster/entities/Subtask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/taskmaster/entities/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/taskmaster/entities/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/taskmaster/entities/TaskStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/taskmaster/entities/TaskStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/taskmaster/managers/FileBackedTasksManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/taskmaster/managers/FileBackedTasksManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/taskmaster/managers/HistoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/taskmaster/managers/HistoryManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/taskmaster/managers/InMemoryHistoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/taskmaster/managers/InMemoryHistoryManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/taskmaster/managers/InMemoryTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/taskmaster/managers/InMemoryTaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/taskmaster/managers/Managers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/taskmaster/managers/Managers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_master_pro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/task_master_pro.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="add_file_io" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,20 +55,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/gson-2.10.1.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;HTTP Request&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="FileBackedTasksManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.taskmaster.managers.FileBackedTasksManager" />
@@ -91,9 +99,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in scratch" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="localhost:8080" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="HTTP Request.All in scratch" />
+        <item itemvalue="HTTP Request.scratch | #2" />
+        <item itemvalue="JavaScript Debug.localhost:8080" />
         <item itemvalue="Application.FileBackedTasksManager" />
       </list>
     </recent_temporary>
@@ -107,7 +127,10 @@
       <option name="presentableId" value="Default" />
       <updated>1689683785004</updated>
       <workItem from="1689683786049" duration="1267000" />
-      <workItem from="1689852918770" duration="11291000" />
+      <workItem from="1689852918770" duration="12404000" />
+      <workItem from="1689953419102" duration="2302000" />
+      <workItem from="1690033036074" duration="17000" />
+      <workItem from="1690055480364" duration="7769000" />
     </task>
     <servers />
   </component>

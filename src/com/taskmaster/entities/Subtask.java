@@ -8,7 +8,7 @@ public class Subtask extends Task {
     private int epicId;
 
     public Subtask(int id, TaskTypes type, String title, TaskStatus status, String description, long duration, LocalDateTime startTime, int epicId) {
-        super(id, type, title, status, description,duration,startTime);
+        super(id, type, title, status, description, duration, startTime);
         this.epicId = epicId;
     }
 
@@ -45,9 +45,10 @@ public class Subtask extends Task {
                 ", epicId=" + getEpicId() +
                 '}';
     }
+
     @Override
-    public String getTaskInfo(){
-        return getId() + "," + TaskTypes.SUBTASK   + "," + getTitle()  + "," + getStatus()  + "," + getDescription() + "," + getDuration() +
-                "," + getStartTime().format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm"))+  "," + getEpicId();
+    public String getTaskInfo() {
+        return getId() + "," + TaskTypes.SUBTASK + "," + getTitle() + "," + getStatus() + "," + getDescription() + "," + getDuration() +
+                "," + getStartTime().format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")) + "," + getEpicId();
     }
 }

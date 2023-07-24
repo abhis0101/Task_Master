@@ -10,13 +10,11 @@ public class Epic extends Task {
     protected final List<Integer> subtasksIds;
     protected LocalDateTime endTime;
 
-
     public Epic(int id, TaskTypes type, String title, TaskStatus status, String description, long duration, LocalDateTime startTime) {
         super(id, type, title, status, description, duration, startTime);
         this.subtasksIds = new ArrayList<>();
-        this.endTime=getEndTime();
+        this.endTime = getEndTime();
     }
-
 
     public void addSubtasksId(int subtaskId) {
         subtasksIds.add(subtaskId);
@@ -29,8 +27,6 @@ public class Epic extends Task {
     public void removeSubtasksId(int subtaskId) {
         subtasksIds.removeIf(integer -> integer == subtaskId);
     }
-
-
 
     @Override
     public boolean equals(Object o) {
@@ -59,8 +55,8 @@ public class Epic extends Task {
     }
 
     @Override
-    public String getTaskInfo(){
-        return getId() + "," + TaskTypes.EPIC   + "," + getTitle()  + "," + getStatus()  + "," + getDescription() +"," + getDuration() +
+    public String getTaskInfo() {
+        return getId() + "," + TaskTypes.EPIC + "," + getTitle() + "," + getStatus() + "," + getDescription() + "," + getDuration() +
                 "," + getStartTime().format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm"));
     }
 

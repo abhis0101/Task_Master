@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class FileBackedTasksManager extends InMemoryTaskManager{
+public class FileBackedTasksManager extends InMemoryTaskManager {
     private File file;
     protected int managerId;
 
@@ -25,7 +25,9 @@ public class FileBackedTasksManager extends InMemoryTaskManager{
     public FileBackedTasksManager(File file) {
         this.file = file;
     }
-    public FileBackedTasksManager() {}
+
+    public FileBackedTasksManager() {
+    }
 
     public void save() {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file))) {
@@ -58,16 +60,16 @@ public class FileBackedTasksManager extends InMemoryTaskManager{
         TaskStatus status = TaskStatus.valueOf(parts[3]);
         String description = parts[4];
         long duration = Long.parseLong(parts[5]);
-        LocalDateTime startTime = LocalDateTime.parse(parts[6] ,FORMATTER);
+        LocalDateTime startTime = LocalDateTime.parse(parts[6], FORMATTER);
 
-        Task task ;
+        Task task;
 
         if (type.equals(TaskTypes.TASK)) {
-            task = new Task(id, type, title, status, description,duration,startTime);
+            task = new Task(id, type, title, status, description, duration, startTime);
         } else if (type.equals(TaskTypes.EPIC)) {
-            task = new Epic(id, type, title, status, description,duration,startTime);
+            task = new Epic(id, type, title, status, description, duration, startTime);
         } else {
-            task = new Subtask(id, type, title, status, description,duration,startTime,Integer.parseInt(parts[7]));
+            task = new Subtask(id, type, title, status, description, duration, startTime, Integer.parseInt(parts[7]));
         }
 
         return task;
@@ -148,6 +150,7 @@ public class FileBackedTasksManager extends InMemoryTaskManager{
             throw new ManagerSaveException(e.getMessage(), e.getCause());
         }
     }
+
     @Override
     public void updateTask(int id, Task updatedTask) {
         super.updateTask(id, updatedTask);
@@ -167,7 +170,6 @@ public class FileBackedTasksManager extends InMemoryTaskManager{
         save();
     }
 
-
     @Override
     public void deleteEverything() {
         super.deleteEverything();
@@ -180,8 +182,6 @@ public class FileBackedTasksManager extends InMemoryTaskManager{
         save();
         return task;
     }
-
-
 
     @Override
     public Epic getEpicById(int id) {
@@ -261,7 +261,7 @@ public class FileBackedTasksManager extends InMemoryTaskManager{
         return task.getTaskInfo();
     }
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         File test = new File("src/com/taskmaster/resources/data.csv");
         FileBackedTasksManager fileBackedTasksManager = new FileBackedTasksManager(test);
 
