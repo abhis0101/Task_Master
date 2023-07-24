@@ -6,13 +6,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class InMemoryHistoryManager implements HistoryManager{
+public class InMemoryHistoryManager implements HistoryManager {
     public Node<Task> first;
     public Node<Task> last;
     public HashMap<Integer, Node<Task>> node = new HashMap<>();
 
-    private static class Node <T> {
-        private final  T task;
+    private static class Node<T> {
+        private final T task;
         private Node<T> prev;
         private Node<T> next;
 
@@ -44,8 +44,8 @@ public class InMemoryHistoryManager implements HistoryManager{
     }
 
     public void linkLast(Task task) {
-        Node <Task> newNode = new Node<>(task,last,null);
-        node.put(task.getId(),newNode);
+        Node<Task> newNode = new Node<>(task, last, null);
+        node.put(task.getId(), newNode);
         if (last == null) {
             first = newNode;
         } else {
@@ -57,7 +57,7 @@ public class InMemoryHistoryManager implements HistoryManager{
 
     public List<Task> getTasks() {
         List<Task> tasks = new ArrayList<>();
-        Node <Task> current = first;
+        Node<Task> current = first;
         while (current != null) {
             tasks.add(current.task);
             current = current.next;

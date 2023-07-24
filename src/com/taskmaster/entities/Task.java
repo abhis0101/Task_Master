@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
-
 public class Task {
     private int id;
     private final TaskTypes type;
@@ -23,6 +22,7 @@ public class Task {
         this.duration = duration;
         this.startTime = startTime;
     }
+
     public int getId() {
         return id;
     }
@@ -84,14 +84,16 @@ public class Task {
         return Objects.hash(id, title, description, status);
     }
 
-    public String getTaskInfo(){
-        return getId() + "," + TaskTypes.TASK   + "," + getTitle()  + "," + getStatus()  + "," + getDescription() + ","
+    public String getTaskInfo() {
+        return getId() + "," + TaskTypes.TASK + "," + getTitle() + "," + getStatus() + "," + getDescription() + ","
                 + getDuration() +
                 "," + getStartTime().format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm"));
     }
-    public LocalDateTime getEndTime(){
+
+    public LocalDateTime getEndTime() {
         return startTime.plusMinutes(duration);
     }
+
     public long getDuration() {
         return duration;
     }
@@ -105,6 +107,6 @@ public class Task {
     }
 
     public void setStartTime(LocalDateTime startTime) {
-        this.startTime =  startTime;
+        this.startTime = startTime;
     }
 }
